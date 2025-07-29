@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign In | Echo Identity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font and icon CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #ECE9F6 0%, #e0e4f6 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background 0.25s;
+    }
+    .login-bg-blur {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      background: radial-gradient(circle at 80% 20%, #7b68ee30 25%, transparent 70%),
+                  radial-gradient(circle at 20% 80%, #3f2b96 12%, transparent 60%);
+      pointer-events: none;
+      filter: blur(2px);
+    }
+    .login-card {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      max-width: 370px;
+      width: 95vw;
+      margin: 1.2rem;
+      padding: 2.7rem 2rem 2.2rem 2rem;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px 0 rgba(120, 102, 204, 0.13), 0 2.5px 12px rgba(64,40,150,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-logo {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #7b68ee 50%, #301b3f 100%);
+      border-radius: 12px;
+      margin-bottom: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #fff;
+      box-shadow: 0 1px 10px #7b68ee22;
+    }
+    .login-card h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #2e2f40;
+      margin: 0 0 0.3em 0;
+    }
+    .login-card .subtitle {
+      font-size: 1.07rem;
+      color: #55566a;
+      margin-bottom: 1.6rem;
+    }
+    .login-card form {
+      width: 100%;
+    }
+    .login-card label {
+      font-weight: 600;
+      color: #33334a;
+      margin-bottom: 0.3em;
+      margin-top: 0.7em;
+      display: block;
+      font-size: 1em;
+    }
+    .login-card input[type="text"],
+    .login-card input[type="password"] {
+      width: 100%;
+      padding: 0.76em 0.95em;
+      border-radius: 6.5px;
+      border: 1.2px solid #dbdbec;
+      background: #f6f7fb;
+      color: #22223b;
+      margin-bottom: 0.7em;
+      font-size: 1em;
+      transition: border-color 0.18s;
+      box-sizing: border-box;
+    }
+    .login-card input:focus {
+      outline: none;
+      border-color: #6b63c4;
+      background: #f1f2ff;
+      box-shadow: 0 0 0 2px #8e2de233;
+    }
+    .login-card button[type="submit"] {
+      width: 100%;
+      padding: 0.9em 0;
+      margin-top: 1.3em;
+      border-radius: 40px;
+      border: none;
+      font-size: 1.09em;
+      font-weight: 700;
+      background: linear-gradient(90deg, #7b68ee 0%, #5f5fc4 80%);
+      color: #fff;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      box-shadow: 0 2px 12px #8e2de22e;
+      transition: background 0.17s, transform 0.13s;
+    }
+    .login-card button[type="submit"]:hover {
+      background: linear-gradient(90deg, #5f5fc4 0%, #7b68ee 80%);
+      transform: translateY(-1px) scale(1.011);
+    }
+    .login-card .error-msg {
+      background: #ffebe9;
+      color: #de3051;
+      font-weight: 600;
+      border-radius: 7px;
+      text-align: center;
+      padding: 0.55em 0.7em;
+      margin-bottom: 1.2rem;
+      border: 1.2px solid #ffd7d5;
+      font-size: 1em;
+    }
+    .login-card .links {
+      text-align: center;
+      margin-top: 1em;
+      font-size: 0.98em;
+      color: #7b68ee;
+    }
+    .login-card .links a {
+      color: #6b63c4;
+      text-decoration: none;
+      margin: 0 0.23em;
+      font-weight: 500;
+      transition: color 0.14s;
+    }
+    .login-card .links a:hover {
+      color: #8e2de2;
+      text-decoration: underline;
+    }
+    @media (max-width: 440px) {
+      .login-card { padding: 1.2rem 0.6rem; }
+      .login-logo { width: 38px; height: 38px; font-size: 1.32rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="login-bg-blur"></div>
+  <main>
+    <div class="login-card">
+      <div class="login-logo">
+        <i class="fa fa-user-shield"></i>
+      </div>
+      <h1>Sign in</h1>
+      <div class="subtitle">to continue to Echo Identity</div>
+      {% if error %}
+          <div class="error-msg">{{ error }}</div>
+      {% endif %}
+      <form method="POST" action="/identity-backend/login" autocomplete="off">
+          <input type="hidden" name="state" value="{{ state }}">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required autocomplete="username" autofocus>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password">
+          <button type="submit">Sign in</button>
+      </form>
+      <div class="links">
+        <a href="#">Forgot password?</a>
+        <span>&middot;</span>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

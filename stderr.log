@@ -1,0 +1,1082 @@
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=4ed01a65-b790-40aa-b5c5-109a100a0d32
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 477843f0-78dc-463a-83cd-562de70a2367, state=4ed01a65-b790-40aa-b5c5-109a100a0d32
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 06:32:34.214638
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=19525b8c-9a00-447e-be9c-c5c111d55c27
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 79ca4a41-87c3-4636-b8d8-025cfbbd3237, state=19525b8c-9a00-447e-be9c-c5c111d55c27
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 06:49:16.509222
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=6ce31392-19d0-455c-8cab-f460f98598dc
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 5864b9d1-e724-4a1f-96a5-899c2f0be5b5, state=6ce31392-19d0-455c-8cab-f460f98598dc
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 07:02:39.581701
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=24a3ab76-ea70-400e-8763-5423595e95f5
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 828884fe-b43e-4cbf-8965-1d4f40fe2974, state=24a3ab76-ea70-400e-8763-5423595e95f5
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 07:21:20.985847
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=fc1b22db-c7ef-487e-a647-afbc46438ec0
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued eabc5abd-d2d2-4b86-bbba-989b5dfdc92b, state=fc1b22db-c7ef-487e-a647-afbc46438ec0
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 07:36:38.190467
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=bf5600a7-512c-45d2-8d1e-ab25f5f4817b
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 22d99eb6-3452-4ac4-8375-093dce3a17a5, state=bf5600a7-512c-45d2-8d1e-ab25f5f4817b
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 07:54:07.746479
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=31ac223c-0321-4fb1-9ea4-72415f3bc37e
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued b9a9cb3a-82f2-45b4-a62c-745e6aeabc1a, state=31ac223c-0321-4fb1-9ea4-72415f3bc37e
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 08:54:55.779885
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /verify success for sub=testuser, aud=logging-service
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] /token rejected: invalid client_id None
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[WARN] /verify missing token
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /verify success for sub=testuser, aud=logging-service
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=5077a294-1fff-47f7-b00d-1c60694ca16f
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=40582fe6-450d-4647-a34e-32d35c445cf8
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 3d085c71-dd67-4c1e-aef0-1408dd789aab, state=40582fe6-450d-4647-a34e-32d35c445cf8
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:16:54.273009
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] /authorize started for client_id=browser-ui, state=d5288b89-4999-4ef7-9c95-9a34b636e93f
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] /authorize started for client_id=browser-ui, state=6b6ffbe8-5b53-4363-9daa-5eaf0861b3c2
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=eded134b-c1f5-4668-a220-8cd328ee1942
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 5e591496-43a5-4890-810e-e2860cfd4481, state=eded134b-c1f5-4668-a220-8cd328ee1942
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:38:11.554642
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=4dc39e18-734f-4ec3-95a7-ba67eb6d5b99
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 69e8ba7a-f648-4582-8e8a-73c966f1a85c, state=4dc39e18-734f-4ec3-95a7-ba67eb6d5b99
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:41:38.866987
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=15274f1f-6c0f-4ad6-a234-66425882a843
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued e3cefdc6-bdcb-477c-8f3b-052783c981d3, state=15274f1f-6c0f-4ad6-a234-66425882a843
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:47:38.692487
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=1bb5cd76-f684-4672-9750-09091c089b32
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued e1f80e53-e186-42f0-8942-2acfe8e31c5d, state=1bb5cd76-f684-4672-9750-09091c089b32
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 20:01:54.178619
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][708282] Child process with pid: 708297 was killed by signal: 15, core dumped: no
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][708282] Child process with pid: 708322 was killed by signal: 15, core dumped: no
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][708282] Child process with pid: 708420 was killed by signal: 15, core dumped: no
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][709421] Child process with pid: 709680 was killed by signal: 15, core dumped: no
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][709421] Child process with pid: 709903 was killed by signal: 15, core dumped: no
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 64, in <module>
+    JWT_SECRET_KEY = get_required_env("JWT_SECRET_KEY")
+  File "/home/auroraho/identity-backend/app.py", line 60, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: JWT_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][709421] Child process with pid: 715360 was killed by signal: 15, core dumped: no
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 9, in <module>
+    from config import (
+  File "/home/auroraho/identity-backend/config.py", line 16, in <module>
+    FLASK_SECRET_KEY = get_required_env("FLASK_SECRET_KEY")
+  File "/home/auroraho/identity-backend/config.py", line 13, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: FLASK_SECRET_KEY not set or still uses a placeholder!
+Traceback (most recent call last):
+  File "/home/auroraho/identity-backend/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/auroraho/identity-backend/app.py", line 9, in <module>
+    from config import (
+  File "/home/auroraho/identity-backend/config.py", line 16, in <module>
+    FLASK_SECRET_KEY = get_required_env("FLASK_SECRET_KEY")
+  File "/home/auroraho/identity-backend/config.py", line 13, in get_required_env
+    raise Exception(f"{key} not set or still uses a placeholder!")
+Exception: FLASK_SECRET_KEY not set or still uses a placeholder!
+[UID:2469][719945] Child process with pid: 719951 was killed by signal: 15, core dumped: no
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=5430bfd0-53c9-4448-a879-20ac34b5e993
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued d60f983a-1707-45dd-aaed-8d780a86a14c, state=5430bfd0-53c9-4448-a879-20ac34b5e993
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=a44b9841-e8a5-48e2-8c19-4baa6de524a0
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=aba8dfe8-5329-424b-b5f6-8ff4d31f99f9
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=1bb5cd76-f684-4672-9750-09091c089b32
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=ea2d41a9-bea7-4144-a86e-a9ac3cc281a2
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 59a311bd-5933-4d39-90ec-156d384e7e08, state=ea2d41a9-bea7-4144-a86e-a9ac3cc281a2
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=ea2d41a9-bea7-4144-a86e-a9ac3cc281a2
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=1bb5cd76-f684-4672-9750-09091c089b32
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=69927d65-0628-46c1-ac02-acebbd8c1866
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 2dde993d-b61d-497b-9bdd-dfce5c45eed3, state=69927d65-0628-46c1-ac02-acebbd8c1866
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=fd413568-75fb-4d71-8da2-18a5ffd09fc8
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 4c204760-6e5f-409e-ae3a-c21e6abcfb50, state=fd413568-75fb-4d71-8da2-18a5ffd09fc8
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=fd413568-75fb-4d71-8da2-18a5ffd09fc8
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=0ee0df4a-21a2-44d0-ae06-04afa8eaa5dc
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 67b88bf2-f4a1-4d7a-a9a8-8c8f1f37c303, state=0ee0df4a-21a2-44d0-ae06-04afa8eaa5dc
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=b5fbc587-18c5-4003-b139-af5e0111b641
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 65f3a468-d76b-4b9a-8a33-68f2ddfbf4ea, state=b5fbc587-18c5-4003-b139-af5e0111b641
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=6c3153d4-4dc4-46c1-8a72-e5eb0e161c6b
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 06e37ad7-8cf3-4f57-ac43-51a0d90fe149, state=6c3153d4-4dc4-46c1-8a72-e5eb0e161c6b
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=98eafc75-4a87-4a90-9eea-a7e2a133f531
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 0520c0d1-adee-4d4d-a91d-314706bd3fdd, state=98eafc75-4a87-4a90-9eea-a7e2a133f531
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+DEBUG: received client_secret: '<dev-client-secret>'
+DEBUG: expected client_secret: 'dev-client-secret'
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=6f719119-b078-4a35-b7cb-f2b4453fea9f
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 42b5b444-1cde-478b-abc3-0a794ebb7d44, state=6f719119-b078-4a35-b7cb-f2b4453fea9f
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[WARN] /token rejected: invalid client_secret for browser-ui
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+DEBUG: received client_secret: '<dev-client-secret>'
+DEBUG: expected client_secret: 'dev-client-secret'
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=65bd35e9-0593-4ea3-966c-c894f09ab419
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 4d3410a7-6173-4f24-b394-5d89473c278a, state=65bd35e9-0593-4ea3-966c-c894f09ab419
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[DEBUG] DEBUG: received client_secret: 'dev-client-secret'
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[DEBUG] DEBUG: expected client_secret: 'dev-client-secret'
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 21:07:42.966851
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
