@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual env
+venv/
+env/
+
+# SQLite DB
+*.db
+
+# Env variables
+.env
+
+# cPanel Passenger files
+tmp/
+passenger_wsgi.pyc
