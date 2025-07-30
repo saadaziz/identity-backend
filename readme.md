@@ -187,3 +187,55 @@ Invoke-RestMethod -Uri "https://aurorahours.com/logging-backend/logs" `
 - **Invalid issuer**: Ensure `JWT_ISSUER` matches across services.
 
 ---
+
+### Make sure secrets match
+
+```bash
+Invoke-RestMethod -Uri "https://aurorahours.com/identity-backend/debug-env"
+```
+
+```bash
+Invoke-RestMethod -Uri "https://aurorahours.com/logging-backend/debug-env"
+```
+
+---
+
+## Coordinated Release Instructions
+
+To ensure `identity-backend` and `logging-backend` are compatible during deployment:
+
+1. Update both repos to use the same `JWT_SECRET_KEY` and `JWT_ISSUER`.
+2. Tag each repo with the same release version (e.g., `v1.0.0`):
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+3. Deploy both services together to avoid mismatched secrets.
+
+### Checking Out Matching Versions
+```bash
+git clone https://github.com/<your-org>/identity-backend.git
+cd identity-backend
+git checkout v1.0.0
+```
+
+```bash
+git clone https://github.com/<your-org>/logging-backend.git
+cd logging-backend
+git checkout v1.0.0
+```
+
+---
+
+## Notes
+
+- JWTs expire based on settings in `identity-backend` (default 15 min).
+- `JWT_SECRET_KEY` must match between identity and logging services.
+- SQLite is used for simplicity; migrate to MySQL/Postgres for production.
+
+### Environment Variables
+Set the same JWT_SECRET_KEY and JWT_ISSUER in both services:
+```bash
+JWT_SECRET_KEY=your_shared_secret
+JWT_ISSUER=identity-backend
+```
