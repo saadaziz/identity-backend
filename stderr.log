@@ -240,3 +240,83 @@ Table 'codes' ensured in authcodes.db
 
 Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
 Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 3d085c71-dd67-4c1e-aef0-1408dd789aab, state=40582fe6-450d-4647-a34e-32d35c445cf8
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:16:54.273009
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] /authorize started for client_id=browser-ui, state=d5288b89-4999-4ef7-9c95-9a34b636e93f
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] /authorize started for client_id=browser-ui, state=6b6ffbe8-5b53-4363-9daa-5eaf0861b3c2
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+USERNAME='default'
+PASSWORD='default'
+USERNAME='u'
+PASSWORD='p'
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
