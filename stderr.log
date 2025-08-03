@@ -1,0 +1,65 @@
+[INFO] /authorize started for client_id=browser-ui, state=cb420d3a-562e-4b7b-8f95-c152d76c5a02
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] User 'username' authenticated, auth_code issued 1fc3e52b-11e7-4f90-8347-a999cb320f5f, state=cb420d3a-562e-4b7b-8f95-c152d76c5a02
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 05:07:26.644661
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=d76d8fff-82b4-473f-8a89-bcd3a14aeb85
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 00f81af7-ddef-4bc0-86fc-2db1a5c64bfa, state=d76d8fff-82b4-473f-8a89-bcd3a14aeb85
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] Issued id_token for user=username client_id=browser-ui exp=2025-08-03 05:09:31.501167
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=dd89b50a-2eed-4615-9e00-08403f79346c
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=dd89b50a-2eed-4615-9e00-08403f79346c
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 57007f3e-12ab-4cb9-90fa-53a747bfc0b0, state=dd89b50a-2eed-4615-9e00-08403f79346c
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued fad681bc-dbdb-409f-9fad-295b353ee24e, state=dd89b50a-2eed-4615-9e00-08403f79346c
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] /authorize started for client_id=browser-ui, state=d76d8fff-82b4-473f-8a89-bcd3a14aeb85
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=1e0db873-c923-405f-a7d6-82788b853e60
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[INFO] User 'username' authenticated, auth_code issued 5d885b86-8bd5-4ef5-8011-b5d98e21aa19, state=1e0db873-c923-405f-a7d6-82788b853e60
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
