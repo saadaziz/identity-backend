@@ -208,6 +208,15 @@ def verify():
         unified_log("WARN", f"/verify failed: invalid token ({e})")
         return jsonify({"valid": False, "error": "Invalid token"}), 401
 
+# Enforce zero defaults in prod, add a fail-fast pattern:
+def must_getenv(name):
+    val = os.getenv(name)
+    if not val:
+        raise Exception(f"{name} not set in environment!")
+    return val
+
+JWT_SECRET_KEY = must_getenv("JWT_SECRET_KEY")
+
 # Do not deploy the following to production - MVP todo ------ #
 @app.route("/test-token")
 def test_token():
