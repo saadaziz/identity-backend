@@ -171,3 +171,72 @@ Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
 Table 'codes' ensured in authcodes.db
 Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
 Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /verify success for sub=testuser, aud=logging-service
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=5077a294-1fff-47f7-b00d-1c60694ca16f
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /authorize started for client_id=browser-ui, state=40582fe6-450d-4647-a34e-32d35c445cf8
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=username, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 9: unexpected EOF while looking for matching `"'
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: eval: line 10: syntax error: unexpected end of file
+[INFO] /username=default, password=****
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+[WARN] Login failed for username=u, client_id=browser-ui
+[WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db

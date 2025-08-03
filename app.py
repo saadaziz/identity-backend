@@ -10,13 +10,16 @@ from config import (
     ALLOWED_CLIENTS,
     CLIENT_SECRETS,
     ALLOWED_REDIRECT_URIS,
+    DEMO_USERNAME,
+    DEMO_PASSWORD,
+    FLASK_SECRET_KEY,
 )
 from logger_utils import unified_log
 import sqlite3
 import os
     
 AUTH_CODE_DB = "authcodes.db"
-print("Using auth code DB at:", os.path.abspath(AUTH_CODE_DB))  # DEBUG - always prints
+print("Using auth code DB at:", os.path.abspath(AUTH_CODE_DB))  
 
 
 def init_code_db():
@@ -30,16 +33,18 @@ def init_code_db():
                 issued_at TIMESTAMP
             )
         """)
-        print("Table 'codes' ensured in", AUTH_CODE_DB)  # DEBUG - always prints
+        print("Table 'codes' ensured in", AUTH_CODE_DB)  
 
 init_code_db()  # <- OUTSIDE __main__, so always runs
 
 app = Flask(__name__)
-app.secret_key = "dev-secret"  # Use strong value in prod!
 
-# Demo credentials
-USERNAME = "username"
-PASSWORD = "password"
+app.secret_key = FLASK_SECRET_KEY
+
+# Demo credentials ------- |  MVP todo  | -------- #
+USERNAME = DEMO_USERNAME
+PASSWORD = DEMO_PASSWORD
+unified_log("INFO", f"/username={USERNAME}, password=****")
 
 @app.route("/authorize")
 def authorize():
@@ -68,6 +73,10 @@ def authorize():
 def handle_login():
     username = request.form.get("username")
     password = request.form.get("password")
+    print(f"USERNAME='{USERNAME}'", flush=True)
+    print(f"PASSWORD='{PASSWORD}'", flush=True)
+    print(f"USERNAME='{username}'", flush=True)
+    print(f"PASSWORD='{password}'", flush=True)
     state = request.form.get("state", "")
     client_id = session.get("client_id")
     redirect_uri = session.get("redirect_uri")
@@ -199,6 +208,7 @@ def verify():
         unified_log("WARN", f"/verify failed: invalid token ({e})")
         return jsonify({"valid": False, "error": "Invalid token"}), 401
 
+# Do not deploy the following to production - MVP todo ------ #
 @app.route("/test-token")
 def test_token():
 
@@ -214,14 +224,11 @@ def test_token():
     token = jwt.encode(payload, JWT_SECRET_KEY, algorithm="HS256")
     return jsonify({"id_token": token})
 
-
 @app.route("/ping")
 def ping():
     return "OK", 200
 
 if __name__ == "__main__":
-    import os
     print("Using auth code DB at:", os.path.abspath(AUTH_CODE_DB))
     init_code_db()
-
     app.run(port=5002, debug=True)

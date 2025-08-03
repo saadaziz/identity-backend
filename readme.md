@@ -222,4 +222,11 @@ end
 
 ---
 
+## Secrets
+```bash
+python -c "import secrets; print(secrets.token_urlsafe(32))"
+dkYM8s8HJGPjjWdXeC9M8uKDnt-G_faRZOEeMYSx4p4
+```
+---
+
 MIT (c) 2025 Saad Aziz and contributors
