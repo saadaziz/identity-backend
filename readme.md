@@ -238,4 +238,6 @@ Invoke-RestMethod -Uri "https://aurorahours.com/logging-backend/log" `
 
 ---
 
+## License
 
+MIT (c) 2025 Saad Aziz and contributors
