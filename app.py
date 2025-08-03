@@ -163,6 +163,58 @@ def logout():
     unified_log("INFO", "User session cleared via logout")
     return "Logged out. <a href='/authorize'>Login again</a>", 200
 
+@app.route("/verify", methods=["POST"])
+def verify():
+    data = request.get_json(force=True)
+    token = data.get("token")
+    aud = data.get("aud")
+
+    if not token:
+        unified_log("WARN", "/verify missing token")
+        return jsonify({"error": "Missing token"}), 400
+
+    try:
+        # Validate the JWT
+        options = {"verify_aud": bool(aud)}
+        decoded = jwt.decode(
+            token,
+            JWT_SECRET_KEY,
+            algorithms=["HS256"],
+            audience=aud,
+            issuer=JWT_ISSUER,
+            options=options,
+        )
+        unified_log("INFO", f"/verify success for sub={decoded.get('sub')}, aud={decoded.get('aud')}")
+        return jsonify({"valid": True, "claims": decoded})
+    except jwt.ExpiredSignatureError:
+        unified_log("WARN", "/verify failed: token expired")
+        return jsonify({"valid": False, "error": "Token expired"}), 401
+    except jwt.InvalidAudienceError:
+        unified_log("WARN", "/verify failed: invalid audience")
+        return jsonify({"valid": False, "error": "Invalid audience"}), 401
+    except jwt.InvalidIssuerError:
+        unified_log("WARN", "/verify failed: invalid issuer")
+        return jsonify({"valid": False, "error": "Invalid issuer"}), 401
+    except jwt.InvalidTokenError as e:
+        unified_log("WARN", f"/verify failed: invalid token ({e})")
+        return jsonify({"valid": False, "error": "Invalid token"}), 401
+
+@app.route("/test-token")
+def test_token():
+
+    now = datetime.datetime.utcnow()
+    payload = {
+        "iss": JWT_ISSUER,
+        "sub": "testuser",
+        "aud": "logging-service",
+        "iat": now,
+        "exp": now + datetime.timedelta(minutes=30),
+        "scope": "openid"
+    }
+    token = jwt.encode(payload, JWT_SECRET_KEY, algorithm="HS256")
+    return jsonify({"id_token": token})
+
+
 @app.route("/ping")
 def ping():
     return "OK", 200

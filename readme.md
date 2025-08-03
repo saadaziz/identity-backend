@@ -1,26 +1,133 @@
 
 # Identity Backend Service (`identity-backend`)
 
-The **identity-backend** is a secure JWT issuer and OpenID Connect (OIDC) identity provider for your microservices platform. It powers both Single Sign-On (SSO) for users and secure, token-based service-to-service authentication.
+The **identity-backend** is a secure JWT issuer and OpenID Connect (OIDC) identity provider for a microservices platform.  
+It powers both Single Sign-On (SSO) for users and secure, token-based service-to-service authentication.
 
 ---
 
 ## Overview
 
-- **User Login**: Implements OAuth2 Authorization Code Flow + OIDC, powering browser-based SSO for all client apps.
+- **User Login**: OAuth2 Authorization Code Flow + OIDC for browser-based SSO.
 - **Service-to-Service JWT**: Issues and validates JWTs for backend services like `logging-backend` and `careergpt-backend`.
-- **Built for microservices**: Hardened for modern Python and REST environments.
+- **Microservices-Ready**: Hardened for Python and REST environments.
 
 ---
 
-## Architecture & Flows
+## 📐 Architecture & Flows
 
-### User Login: OAuth2/OIDC Authorization Code Flow
+### System Context
+
+![System Context](https://aurorahours.com/images/Echo-system-context.png)
+
+<details>
+<summary>PlantUML: System Context</summary>
+
+```plantuml
+@startuml
+!theme spacelab
+actor User
+package "Echo Platform" {
+    [Browser Client (API Gateway)] as Browser
+    [identity-backend] as IDP
+    [logging-backend] as Logging
+    [careergpt-backend] as CareerGPT
+}
+User --> Browser : Uses web app
+Browser --> IDP : OIDC login / SSO
+IDP --> Browser : JWT/OIDC ID token
+Browser --> Logging : API calls with JWT
+Browser --> CareerGPT : API calls with JWT
+Logging --> IDP : Verify JWT (S2S)
+CareerGPT --> IDP : Verify JWT (S2S)
+@enduml
+```
+
+</details>
+
+---
+
+### Component Diagram
+![System Context](https://aurorahours.com/images/identity-main-components2.png)
+<details>
+<summary>PlantUML: Main Components</summary>
+
+```plantuml
+@startuml
+package "identity-backend" {
+    [Flask API]
+    [JWT Issuer]
+    [OIDC Flow Engine]
+    [SQLite: authcodes.db]
+    [Logger Utils]
+}
+[Flask API] --> [JWT Issuer]
+[Flask API] --> [OIDC Flow Engine]
+[OIDC Flow Engine] --> [SQLite: authcodes.db]
+[Flask API] --> [Logger Utils]
+@enduml
+```
+
+</details>
+
+---
+
+### REST API Endpoints
+![System Context](https://aurorahours.com/images/identity-rest-api-c4-container.png)
+<details>
+<summary>PlantUML: REST API (C4 Container)</summary>
+
+```plantuml
+@startuml
+class "identity-backend API" as API {
+    + GET /authorize : OIDC start
+    + POST /login : Login form POST
+    + POST /token : OAuth2 code exchange for JWT
+    + POST /verify : Validate JWT (S2S)
+    + GET /test-token : Dev: issue JWT for testing
+    + GET /ping : Health
+    + GET /.well-known/openid-configuration : OIDC metadata
+    + GET /logout : Clear session
+}
+@enduml
+```
+
+</details>
+
+---
+
+### Data Model: Auth Codes DB
+![User Login Sequence](https://aurorahours.com/images/identity-table-authcodes.png)
+
+<details>
+<summary>PlantUML: SQLite Table (authcodes.db)</summary>
+
+
+```plantuml
+@startuml
+entity "codes" as codes {
+    * code : TEXT [PK]
+    --
+    username : TEXT
+    client_id : TEXT
+    scope : TEXT
+    issued_at : TIMESTAMP
+}
+@enduml
+```
+
+</details>
+
+---
+
+## 🔄 Sequence Diagrams
+
+### 1. User SSO: OAuth2/OIDC Authorization Code Flow
 
 ![User Login Sequence](https://aurorahours.com/images/OIDC-OAuth2-Authz-Code-Flow-Sequence-Diagram-1.0.png)
 
 <details>
-<summary>View PlantUML Source</summary>
+<summary>PlantUML: OIDC Authorization Code Flow</summary>
 
 ```plantuml
 @startuml
@@ -65,12 +172,12 @@ C -> U : Serve request if valid JWT
 
 ---
 
-### Service-to-Service JWT Authentication
+### 2. Service-to-Service JWT Authentication
 
 ![Service-to-Service Sequence](https://aurorahours.com/images/Service-to-Service-JWT-Authentication.png)
 
 <details>
-<summary>View PlantUML Source</summary>
+<summary>PlantUML: Service-to-Service JWT</summary>
 
 ```plantuml
 @startuml
@@ -93,151 +200,26 @@ end
 
 ---
 
-## Quick Start
+## 📖 How the Code Works
 
-### 1. **Environment Variables**
-
-Set the following in `.env` (for local) or your deployment environment:
-
-| Variable                   | Description                                    | Example/Default                            |
-| -------------------------- | ---------------------------------------------- | ------------------------------------------ |
-| `JWT_SECRET_KEY`           | Strong shared secret (must match all services) | `your_shared_secret`                       |
-| `JWT_ISSUER`               | Unique URL or name for issuer                  | `https://aurorahours.com/identity-backend` |
-| `JWT_EXPIRATION_MINUTES`   | Token expiry (minutes)                         | `15`                                       |
-| `BROWSER_UI_CLIENT_SECRET` | Secret for browser-ui client                   | `dev-client-secret`                        |
-
-* All variables **must match** across services for secure validation.
+* **OIDC SSO:**
+  `/authorize` + `/login` + `/token` implement the full Authorization Code + OIDC ID token flow for browser SSO.
+* **JWT S2S:**
+  `/token` (POST) also supports backend services (S2S) if you POST the correct `sub`/`aud`.
+* **JWT Verification:**
+  `/verify` allows clients/services to validate JWTs issued by this service.
+* **Dev Test:**
+  `/test-token` instantly issues a valid JWT for dev/testing (never expose in prod).
+* **Health/Meta:**
+  `/ping` (health), `/.well-known/openid-configuration` (OIDC discovery), `/logout` (session clear).
 
 ---
 
-### 2. **Install Requirements**
+## 💡 Pro Tip
 
-```bash
-pip install -r requirements.txt
-```
-
-* Python 3.8+
-* Flask, PyJWT, python-dotenv
+* Paste any JWT into [jwt.io](https://jwt.io/) to inspect its claims.
+* Use the diagrams for onboarding, docs, and architecture review.
 
 ---
-
-### 3. **Deploy (cPanel or any WSGI host)**
-
-1. Upload code to `/identity-backend`
-2. Configure variables in **Setup Python App**
-3. Install packages:
-   `pip install -r requirements.txt`
-4. Restart with:
-
-   ```
-   touch tmp/restart.txt
-   ```
-
----
-
-## API Reference
-
-### 1. **Health Check**
-
-**GET** `/ping`
-Returns `OK` if running.
-
----
-
-### 2. **Generate JWT**
-
-**POST** `/token`
-
-```json
-{
-  "sub": "careergpt-backend",
-  "aud": "logging-service"
-}
-```
-
-**cURL:**
-
-```bash
-curl -X POST "https://aurorahours.com/identity-backend/token" \
-  -H "Content-Type: application/json" \
-  -d '{"sub":"careergpt-backend","aud":"logging-service"}'
-```
-
----
-
-### 3. **Verify JWT**
-
-**POST** `/verify`
-
-```json
-{
-  "token": "<jwt_here>",
-  "aud": "logging-service"
-}
-```
-
----
-
-### 4. **Debug Environment (optional)**
-
-**GET** `/debug-env`
-Returns current config (never expose in production).
-
----
-
-## Integration Example
-
-### PowerShell: Generate & Use JWT
-
-```powershell
-# Generate JWT
-$resp = Invoke-RestMethod -Uri "https://aurorahours.com/identity-backend/token" `
-  -Method POST `
-  -Headers @{"Content-Type"="application/json"} `
-  -Body '{"sub":"careergpt-backend","aud":"logging-service"}'
-$token = $resp.token
-
-# Use JWT to log
-Invoke-RestMethod -Uri "https://aurorahours.com/logging-backend/log" `
-  -Method POST `
-  -Headers @{"Authorization"="Bearer $token"; "Content-Type"="application/json"} `
-  -Body '{"service":"careergpt","level":"INFO","message":"Test log"}'
-```
-
----
-
-## Integration Notes
-
-* **identity-backend** issues JWTs for both user login (SSO) and secure service-to-service authentication.
-* All backend services must share the same `JWT_SECRET_KEY` and `JWT_ISSUER`.
-* All requests to protected endpoints must include a valid JWT in the `Authorization` header.
-
----
-
-## Common Issues
-
-* **Invalid audience/issuer**: Check that `aud` and `iss` match your config.
-* **Token expired**: Request a new token from `/token`.
-* **Signature verification failed**: Make sure secrets are in sync across services.
-
----
-
-## Release & Operations
-
-* **Always update both identity-backend and logging-backend to use the same `JWT_SECRET_KEY` before deployment.**
-* Tag releases consistently (`v1.0.0`) and deploy both together.
-* Use `/debug-env` to confirm environment variable consistency (disable in prod).
-
----
-
-## Contributing & Updating Diagrams
-
-* Keep all PlantUML sources in `/docs/architecture/` in source control.
-* Regenerate PNGs using PlantUML whenever flows are updated.
-* Update this README with any changes to authentication flow or endpoints.
-
----
-
-## License
 
 MIT (c) 2025 Saad Aziz and contributors
