@@ -320,3 +320,97 @@ PASSWORD='p'
 [WARN] Login failed for username=u, client_id=browser-ui
 [WARN] Failed to log to logging-backend: 401 {"error":"Invalid issuer"}
 
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=eded134b-c1f5-4668-a220-8cd328ee1942
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 5e591496-43a5-4890-810e-e2860cfd4481, state=eded134b-c1f5-4668-a220-8cd328ee1942
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:38:11.554642
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /authorize started for client_id=browser-ui, state=4dc39e18-734f-4ec3-95a7-ba67eb6d5b99
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+Using auth code DB at: /home/auroraho/identity-backend/authcodes.db
+Table 'codes' ensured in authcodes.db
+USERNAME='u'
+PASSWORD='p'
+USERNAME='u'
+PASSWORD='p'
+[INFO] User 'u' authenticated, auth_code issued 69e8ba7a-f648-4582-8e8a-73c966f1a85c, state=4dc39e18-734f-4ec3-95a7-ba67eb6d5b99
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] Issued id_token for user=u client_id=browser-ui exp=2025-08-03 19:41:38.866987
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+[INFO] /username=u, password=****
+[WARN] Failed to log to logging-backend: 404 <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+

@@ -22,6 +22,6 @@ ALLOWED_CLIENTS = ["browser-ui"]
 CLIENT_SECRETS = {
     "browser-ui": os.getenv("BROWSER_UI_CLIENT_SECRET", "dev-client-secret-default")
 }
-
 DEMO_USERNAME = os.getenv("DEMO_USERNAME", "default")
 DEMO_PASSWORD = os.getenv("DEMO_PASSWORD", "default")
+DEV_MODE = os.environ.get("DEV_MODE", "false").lower() == "true"

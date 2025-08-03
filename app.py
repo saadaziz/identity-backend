@@ -1,3 +1,6 @@
+# todo - production ready checklist:
+# - Dev-Only Endpoints Exposed in Production
+
 from flask import Flask, request, redirect, render_template, session, jsonify, url_for
 import jwt
 import datetime
@@ -13,6 +16,7 @@ from config import (
     DEMO_USERNAME,
     DEMO_PASSWORD,
     FLASK_SECRET_KEY,
+    DEV_MODE
 )
 from logger_utils import unified_log
 import sqlite3
@@ -45,6 +49,15 @@ app.secret_key = FLASK_SECRET_KEY
 USERNAME = DEMO_USERNAME
 PASSWORD = DEMO_PASSWORD
 unified_log("INFO", f"/username={USERNAME}, password=****")
+
+# Enforce zero defaults in prod, add a fail-fast pattern:
+def must_getenv(name):
+    val = os.getenv(name)
+    if not val:
+        raise Exception(f"{name} not set in environment!")
+    return val
+
+JWT_SECRET_KEY = must_getenv("JWT_SECRET_KEY")
 
 @app.route("/authorize")
 def authorize():
@@ -208,14 +221,7 @@ def verify():
         unified_log("WARN", f"/verify failed: invalid token ({e})")
         return jsonify({"valid": False, "error": "Invalid token"}), 401
 
-# Enforce zero defaults in prod, add a fail-fast pattern:
-def must_getenv(name):
-    val = os.getenv(name)
-    if not val:
-        raise Exception(f"{name} not set in environment!")
-    return val
 
-JWT_SECRET_KEY = must_getenv("JWT_SECRET_KEY")
 
 # Do not deploy the following to production - MVP todo ------ #
 @app.route("/test-token")
@@ -237,6 +243,11 @@ def test_token():
 def ping():
     return "OK", 200
 
+if not DEV_MODE:
+    # Remove or don't register dev/test routes
+    app.view_functions.pop('test_token', None)
+    #app.view_functions.pop('debug_env', None)
+    
 if __name__ == "__main__":
     print("Using auth code DB at:", os.path.abspath(AUTH_CODE_DB))
     init_code_db()
