@@ -56,7 +56,10 @@ CareerGPT --> IDP : Verify JWT (S2S)
 
 ---
 
-### Component Diagram
+### 🧩 Component Diagram
+
+The following diagram shows the internal structure of the `identity-backend` service and how its components interact:
+
 ![System Context](https://aurorahours.com/images/identity-main-components2.png)
 <details>
 <summary>PlantUML: Main Components</summary>
@@ -78,6 +81,25 @@ package "identity-backend" {
 ```
 
 </details>
+
+
+### 🔹 Components
+
+| Component              | Description |
+|------------------------|-------------|
+| **Flask API**          | Main HTTP entry point that handles routes like `/authorize`, `/login`, `/token`, `/verify`. |
+| **OIDC Flow Engine**   | Manages the OAuth2 Authorization Code flow: validates clients, stores auth codes, and handles redirect logic. |
+| **JWT Issuer**         | Signs and issues secure JWTs using `PyJWT`. |
+| **Logger Utils**       | Sends structured log events to the centralized logging service using short-lived JWTs. |
+| **SQLite: authcodes.db** | Lightweight local database that stores one-time-use authorization codes. |
+
+### 🔹 Flow Summary
+
+- The **Flask API** coordinates all requests.
+- It delegates login flow to the **OIDC Flow Engine**.
+- Upon success, it uses the **JWT Issuer** to create tokens.
+- Logs are sent through **Logger Utils**.
+- The **OIDC Flow Engine** writes and reads from `authcodes.db`.
 
 ---
 
