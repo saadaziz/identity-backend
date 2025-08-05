@@ -1,4 +1,4 @@
-import os
+import os, json
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,12 +20,8 @@ JWT_EXPIRATION_MINUTES = int(os.getenv("JWT_EXPIRATION_MINUTES", 15))
 LOGGING_BACKEND_URL = get_required_env("LOGGING_BACKEND_URL")
 LOGGING_BACKEND_AUD = get_required_env("LOGGING_BACKEND_AUD")
 IDENTITY_SUB = get_required_env("IDENTITY_SUB")
-ALLOWED_REDIRECT_URIS = [
-    "http://localhost:5000/callback"
-]
-ALLOWED_CLIENTS = ["browser-ui"]
-CLIENT_SECRETS = {
-    "browser-ui": get_required_env("BROWSER_UI_CLIENT_SECRET")
-}
+ALLOWED_REDIRECT_URIS = os.getenv("ALLOWED_REDIRECT_URIS", "http://localhost:5000/callback").split(",")
+ALLOWED_CLIENTS = os.getenv("ALLOWED_CLIENTS", "browser-ui").split(",")
+CLIENT_SECRETS = json.loads(os.getenv("CLIENT_SECRETS", '{"browser-ui":"changeme"}'))
 DEMO_USERNAME = get_required_env("DEMO_USERNAME")
 DEMO_PASSWORD = get_required_env("DEMO_PASSWORD")

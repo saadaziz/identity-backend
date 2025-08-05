@@ -1,30 +1,43 @@
 import sys
-import json
-import requests
+import requests, logging, jwt, datetime
 from config import (
     JWT_SECRET_KEY,
     JWT_ISSUER,
     LOGGING_BACKEND_URL,
     LOGGING_BACKEND_AUD,
     IDENTITY_SUB,
+    DEV_MODE
 )
 
-def log_to_stderr(level, message, context=None):
-    """Print logs to stderr for cPanel visibility"""
-    log_line = f"[{level}] {message} | Context: {context}" if context else f"[{level}] {message}"
-    print(log_line, file=sys.stderr)
+logger = logging.getLogger("identity-logger")
+logger.setLevel(logging.DEBUG if DEV_MODE else logging.INFO)
 
-def log_to_logging_service(level, message, context=None):
-    """Send log to logging-backend using a JWT token issued for this service"""
+# Avoid duplicate handlers (e.g. Flask auto-reload)
+if not logger.hasHandlers():
+    handler = logging.StreamHandler()
+    formatter = logging.Formatter(
+        "[%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
+    )
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+
+def log_to_stderr(level: str, message: str, context=None):
+    if context:
+        message += f" | Context: {context}"
+    level = level.upper()
+    log_fn = getattr(logger, level.lower(), logger.info)
+    log_fn(message)
+
+def log_to_logging_service(level: str, message: str, context=None):
+    """Send log to centralized logging backend using JWT."""
     try:
-        import jwt, datetime
         now = datetime.datetime.utcnow()
         payload = {
             "iss": JWT_ISSUER,
             "sub": IDENTITY_SUB,
             "aud": LOGGING_BACKEND_AUD,
             "iat": now,
-            "exp": now + datetime.timedelta(minutes=5)  # short-lived
+            "exp": now + datetime.timedelta(minutes=5)
         }
         token = jwt.encode(payload, JWT_SECRET_KEY, algorithm="HS256")
 
@@ -35,18 +48,20 @@ def log_to_logging_service(level, message, context=None):
 
         data = {
             "service": IDENTITY_SUB,
-            "level": level,
+            "level": level.upper(),
             "message": message,
             "context": context
         }
 
-        response = requests.post(LOGGING_BACKEND_URL, headers=headers, json=data)
+        response = requests.post(LOGGING_BACKEND_URL+'/log', headers=headers, json=data, timeout=5)
         if response.status_code >= 400:
-            print(f"[WARN] Failed to log to logging-backend: {response.status_code} {response.text}", file=sys.stderr)
+            logger.warning(f"Central logging failed: HTTP {response.status_code} - {response.text}")
     except Exception as e:
-        print(f"[ERROR] Exception while logging to logging-backend: {e}", file=sys.stderr)
+        logger.error(f"Exception during logging to backend: {e}", exc_info=True)
 
-def unified_log(level, message, context=None):
-    """Convenience: log to both stderr and logging-backend"""
+def unified_log(level: str, message: str, context=None):
+    """Log to both stderr and central backend (in production)."""
     log_to_stderr(level, message, context)
+    #if not DEV_MODE:
+    #    
     log_to_logging_service(level, message, context)

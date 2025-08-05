@@ -1,9 +1,3 @@
-# todo - production ready checklist:
-# - Dev-Only Endpoints Exposed in Production
-# - Remove print/log statements that are not necessary any longer after debugging
-# - Make sure to toggle DEV_MODE to false
-# - See todo: Save params for login step (use Flask session, not secure for prod)
-
 from flask import Flask, request, redirect, render_template, session, jsonify, url_for
 import jwt
 import datetime
@@ -26,8 +20,7 @@ import sqlite3
 import os
     
 AUTH_CODE_DB = "authcodes.db"
-print("Using auth code DB at:", os.path.abspath(AUTH_CODE_DB))  
-
+unified_log("INFO", f"/Using auth code DB at:{os.path.abspath(AUTH_CODE_DB)}")
 
 def init_code_db():
     with sqlite3.connect(AUTH_CODE_DB) as conn:
@@ -40,9 +33,7 @@ def init_code_db():
                 issued_at TIMESTAMP
             )
         """)
-        print("Table 'codes' ensured in", AUTH_CODE_DB)  
-
-init_code_db()  # <- OUTSIDE __main__, so always runs
+        unified_log("INFO", f"Table 'codes' ensured in:{AUTH_CODE_DB}")  
 
 app = Flask(__name__)
 
@@ -51,7 +42,6 @@ app.secret_key = FLASK_SECRET_KEY
 # Demo credentials ------- |  MVP todo  | -------- #
 USERNAME = DEMO_USERNAME
 PASSWORD = DEMO_PASSWORD
-unified_log("INFO", f"/username={USERNAME}, password=****")
 
 @app.route("/authorize")
 def authorize():
@@ -80,10 +70,6 @@ def authorize():
 def handle_login():
     username = request.form.get("username")
     password = request.form.get("password")
-    print(f"USERNAME='{USERNAME}'", flush=True)
-    print(f"PASSWORD=***", flush=True)
-    print(f"USERNAME='{username}'", flush=True)
-    print(f"PASSWORD=***", flush=True)
     state = request.form.get("state", "")
     client_id = session.get("client_id")
     redirect_uri = session.get("redirect_uri")
@@ -116,11 +102,9 @@ def token():
     client_secret = request.form.get("client_secret")
     redirect_uri = request.form.get("redirect_uri")
 
- # todo - remoove after DEBUG: Print secrets for diagnosis!
-    if DEV_MODE:
-        unified_log("DEBUG", f"DEBUG: received client_secret: {client_secret!r}")
-        unified_log("DEBUG", f"DEBUG: expected client_secret: {CLIENT_SECRETS.get(client_id)!r}")
-# - end remove #
+    # todo - remoove after DEBUG: Print secrets for diagnosis!
+    unified_log("DEBUG", f"DEBUG: received client_secret: {client_secret!r}")
+    unified_log("DEBUG", f"DEBUG: expected client_secret: {CLIENT_SECRETS.get(client_id)!r}")
 
     if not client_id or client_id not in ALLOWED_CLIENTS:
         unified_log("WARN", f"/token rejected: invalid client_id {client_id}")
@@ -224,7 +208,12 @@ def verify():
 # Do not deploy the following to production - MVP todo ------ #
 @app.route("/test-token")
 def test_token():
-
+    unified_log("WARN", "/test-token called", {
+        "ip": request.remote_addr,
+        "user_agent": request.headers.get("User-Agent"),
+        "auth_header": request.headers.get("Authorization", "<none>")
+    })
+    unified_log("DEBUG", f"JWT_ISSUER: {JWT_ISSUER}")
     now = datetime.datetime.utcnow()
     payload = {
         "iss": JWT_ISSUER,
@@ -241,12 +230,12 @@ def test_token():
 def ping():
     return "OK", 200
 
-if not DEV_MODE:
+#if not DEV_MODE:
     # Remove or don't register dev/test routes
-    app.view_functions.pop('test_token', None)
+    #app.view_functions.pop('test_token', None)
     #app.view_functions.pop('debug_env', None)
     
 if __name__ == "__main__":
-    print("Using auth code DB at:", os.path.abspath(AUTH_CODE_DB))
     init_code_db()
-    app.run(port=5002, debug=True)
+    unified_log("INFO", f"Using auth code DB at: {os.path.abspath(AUTH_CODE_DB)}")
+    app.run(port=5002, debug=DEV_MODE)
