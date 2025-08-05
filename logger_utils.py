@@ -53,7 +53,7 @@ def log_to_logging_service(level: str, message: str, context=None):
             "context": context
         }
 
-        response = requests.post(LOGGING_BACKEND_URL+'/log', headers=headers, json=data, timeout=5)
+        response = requests.post(LOGGING_BACKEND_URL + '/log', headers=headers, json=data, timeout=5)
         if response.status_code >= 400:
             logger.warning(f"Central logging failed: HTTP {response.status_code} - {response.text}")
     except Exception as e:

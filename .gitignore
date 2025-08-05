@@ -16,3 +16,6 @@ env/
 # cPanel Passenger files
 tmp/
 passenger_wsgi.pyc
+
+#stderr log file
+stderr.log
